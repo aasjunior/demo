@@ -1,6 +1,6 @@
 package com.example.demo.domain.model.responsavel;
 
-public record ReponsavelRequest(
+public record ResponsavelRequest(
         String nome,
         String sobrenome
 ) {

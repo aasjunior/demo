@@ -5,4 +5,11 @@ public record PacienteResponse(
         String nome,
         String sobrenome
 ) {
+    public static PacienteResponse convert(Paciente paciente){
+        return new PacienteResponse(
+                paciente.getId(),
+                paciente.getNome(),
+                paciente.getSobrenome()
+        );
+    }
 }
